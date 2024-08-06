@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "Dictionary",
+  "version": "0.0.2",
+  "description": "Double tap on words to get definition, synonyms, and translation!",
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "all_frames": true,
+      "matches": ["<all_urls>"],
+      "css": ["styles.css"],
+      "js": ["content.js"]
+    }
+  ],
+  "permissions": ["activeTab"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "src/icon-128.png"
+  },
+  "icons": {
+    "128": "src/icon-128.png"
+  }
+}

@@ -1,0 +1,27 @@
+
+supabase
+- row level security
+
+extension
+- prettify the popup
+- 0 index should not be null. why is this happening?
+- (DONE) deleting bookmarks needs to work
+- (DONE) sync on events
+- (DONE) add "last synced: [time]" to popup
+
+website
+- cookie to store session token so that u don't have to keep logging in
+- cookie to store folder openness?
+- prettify
+- (DONE. NEED TO PUSH) error message for wrong password 
+
+neovim missing features
+- prettify key
+- git integration
+- commenting: gb or gc
+- turn off ahk (vscode too)
+- rename symbol (in and across files)
+- wrap in parenthesis / quotes
+- folding
+- debugging
+- parenthesis coloring

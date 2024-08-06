@@ -1,0 +1,9 @@
+desired features
+- dictionary
+- translator
+- thesaurus
+
+- time limit + take breaks (might be better as ahk script)
+- css injection (ie make everything comic mono)
+- tabs backup
+- mouse gestures

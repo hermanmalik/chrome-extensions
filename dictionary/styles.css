@@ -1,0 +1,30 @@
+.popup-class {
+    position: absolute; 
+    background: #ffffff;
+    outline: 2px solid black;
+    padding: 5px;
+    max-width: 300px;
+    border-radius: 2px;
+    
+    color: black;
+    text-align: center;
+    font: normal normal bold 14px/1 sans-serif;
+    overflow-wrap: break-word; /* Handles long words */
+    word-wrap: break-word; /* Handles non-standard text and old browsers */
+}
+.popup-class h3 {
+    margin: 5px;
+    padding: 0%;
+    text-align: center;
+    color: black;
+    font: normal normal bold 18px/1 sans-serif;
+}
+.popup-class p {
+    margin: 5px;
+    padding: 0%;
+    text-align: center;
+    font: normal normal normal 14px/1 sans-serif;
+}
+.popup-class i {
+    font-style: italic;
+}

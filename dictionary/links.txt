@@ -1,0 +1,6 @@
+https://developer.chrome.com/docs/extensions/get-started/tutorial/scripts-activetab
+https://api.dictionaryapi.dev/api/v2/entries/en/unlearning
+https://dictionaryapi.com/products/api-collegiate-thesaurus
+https://dictionaryapi.com/products/api-collegiate-dictionary
+https://github.com/pnlpal/dictionariez
+https://github.com/Uncover-F/TAS
