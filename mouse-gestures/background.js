@@ -1,5 +1,5 @@
 
-/////////////////////////////////////// MOUSE ACTIONS /////////////////////////////////////////////
+// listen for message from content script and execute the corresponding action
 chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
   switch (message.action) {
     case 'createTab':
@@ -68,34 +68,8 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
         });
       });
       break;
+    default:
       console.warn(`Unknown action: ${message.action}`);
+      break;
   }
 });
-
-
-/////////////////////////////////////// BOOKMARK SYNC /////////////////////////////////////////////
-// const SUPABASE_URL = 'https://your-project.supabase.co';
-// const SUPABASE_KEY = 'your-supabase-key';
-
-// async function uploadBookmarks() {
-//   const bookmarks = await chrome.bookmarks.getTree();
-//   const response = await fetch(`${SUPABASE_URL}/rest/v1/bookmarks`, {
-//     method: 'POST',
-//     headers: {
-//       'Content-Type': 'application/json',
-//       'apikey': SUPABASE_KEY,
-//       'Authorization': `Bearer ${SUPABASE_KEY}`
-//     },
-//     body: JSON.stringify(bookmarks)
-//   });
-
-//   if (!response.ok) {
-//     console.error('Error syncing bookmarks:', await response.text());
-//   }
-// }
-
-// async function downloadBookmarks() {
-
-// }
-
-// chrome.runtime.onInstalled.addListener(syncBookmarks);

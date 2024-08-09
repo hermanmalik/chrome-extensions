@@ -1,4 +1,3 @@
 - popup menu where you can add and modify gestures
 - display action text during gestures
 - add more personal gestures - look at chrome apis to see what's possible
-- scroll top and bottom, left and right one tab, 
