@@ -9,22 +9,20 @@ Note that
 ## Dictionary, Thesaurus, and Translation Extension
 This is a browser extension which provides a dictionary, thesaurus, and translation service for web browsing.
 
-To use it, double click a word or larger selection. If the selection is in English, buttons will appear for dictionary and thesaurus. The translation feature is not done yet. 
+To use it, double click a word or larger selection. If the selection is in English, buttons will appear for dictionary and thesaurus. 
 
 ### How it works
 The extension is possibly as simple as it can get. Upon double clicking a word, it makes an API call to Merriam Webster and if there is a result, you get the option to look at it.
 
-Translation by its nature involves some sort of machine intelligence, and is correspondingly more difficult. The current issue is that I'd need to self-host a translation model or pay for an API, since there doesn't seem to be a good free one. The one I did find ran into CORS trouble. Will work on it eventually. 
+Translation by its nature involves some sort of machine intelligence, and is correspondingly more difficult. I am using GPT-4o for this, so you'll need to get an API key for that. It's not free, but it's pretty cheap (like this extension is for sure less than a dollar a month for personal use).
 
 ### How to install
 1) Download the folder "dictionary".
-2) I'm using Merriam-Webster's collegiate dictionary and thesaurus APIs. YOU NEED TO GO INTO CONTENT.JS AND REPLACE THE KEY VARIABLES WITH YOUR OWN API KEYS! (You can get API keys for free for personal use on the Merriam-Webster website.) 
+2) I'm using Merriam-Webster's collegiate dictionary and thesaurus APIs, and OpenAI's model API. YOU NEED TO GO INTO CONTENT.JS AND REPLACE THE KEY VARIABLES WITH YOUR OWN API KEYS! (You can get API keys for free for personal use on the Merriam-Webster website, and API keys *not* for free on the OpenAI website.) 
 3) Load the unpacked extension by going to chrome://extensions, turning on developer mode, selecting load unpacked, and pointing it to the downloaded folder containing manifest.json.
 
 ### Features in the works
-The translation feature is not currently working. It is in progress (in the sense that at some point I'll go do it) and other than that is the only feature in progress. You will probably need your own API key for that too. 
-
-In the future I will maybe the installation process easier (e.g. env file for keys, packed crx for you to download, more steps / pictures here, or just put it on the chrome web store). Let me know if you like this and I'll make it good.
+This extension is essentially done. The only likely changes would be cosmetic and possibly making the installation process easier (e.g. env file for keys, packed crx for you to download, more steps / pictures here, or just put it on the chrome web store). Let me know if you are an actual human who likes this extension and I'll make it look and feel a little nicer.
 
 ## Mouse Gestures Extension
 This extension allows one to hold down right click and draw gestures to do things. It's like keyboard shortcuts, but instead of hating mice you hate keyboards. It replaces "CRXMouse", which I'm fairly positive was spyware.
