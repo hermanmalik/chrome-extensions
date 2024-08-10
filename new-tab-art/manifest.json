@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "Random Art New Tab",
+  "version": "1.0",
+  "description": "Replaces the new tab page with a random piece of art.",
+  "permissions": [
+    "storage",
+    "activeTab"
+  ],
+  "chrome_url_overrides": {
+    "newtab": "newtab.html"
+  }
+}

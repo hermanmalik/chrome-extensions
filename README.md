@@ -18,8 +18,9 @@ Translation by its nature involves some sort of machine intelligence, and is cor
 
 ### How to install
 1) Download the folder "dictionary".
-2) I'm using Merriam-Webster's collegiate dictionary and thesaurus APIs, and OpenAI's model API. YOU NEED TO GO INTO CONTENT.JS AND REPLACE THE KEY VARIABLES WITH YOUR OWN API KEYS! (You can get API keys for free for personal use on the Merriam-Webster website, and API keys *not* for free on the OpenAI website.) 
-3) Load the unpacked extension by going to chrome://extensions, turning on developer mode, selecting load unpacked, and pointing it to the downloaded folder containing manifest.json.
+2) I'm using Merriam-Webster's collegiate dictionary and thesaurus APIs, and OpenAI's model API. YOU NEED TO GO INTO CONTENT.JS AND REPLACE THE KEY VARIABLES WITH YOUR OWN API KEYS! (You can get API keys for free for personal use on the Merriam-Webster website, and API keys *not* for free on the OpenAI website.)
+3) Enter your API keys as `const DICT_KEY = [key]`, and likewise for `THES_KEY` and `GPT_KEY` at the top of `dictionary/content.js`. If you want to change the GPT model or prompt, those variables are also in `content.js`.
+4) Load the unpacked extension by going to chrome://extensions, turning on developer mode, selecting load unpacked, and pointing it to the downloaded folder containing manifest.json.
 
 ### Features in the works
 This extension is essentially done. The only likely changes would be cosmetic and possibly making the installation process easier (e.g. env file for keys, packed crx for you to download, more steps / pictures here, or just put it on the chrome web store). Let me know if you are an actual human who likes this extension and I'll make it look and feel a little nicer.
@@ -33,6 +34,7 @@ When you hold right click, an event listener tracks your up/down/right/left gest
 ### How to install
 1) Download the folder "mouse-gestures".
 2) If you want to modify the gestures or add more, currently you'll have to go in the source code. The pages linked on [[https://developer.chrome.com/docs/extensions/reference/api/]] contain everything you could do, but you may have to add permissions in the manifest.json.
+To modify a gesture, add a name and directions for it at the top of `gestures.js`, then add code to `background.js` calling the desired chrome API.
 3) Load the unpacked extension by going to chrome://extensions, turning on developer mode, selecting load unpacked, and pointing it to the downloaded folder containing manifest.json.
 
 ### Features in the works
@@ -64,6 +66,11 @@ CREATE TABLE bookmarks (
 
 ### Features in the works
 I'm planning to sync the tabs I have open on each device, and a synced index of the archive of books, papers, and textbooks I have downloaded. I might use an API to get download links for the books, papers, and textbooks, or work out some solution to download from one of my devices.
+
+## Other Extensions maybe coming soon
+- New Tab Art - replaces the new tab page with a random daily artwork, hopefully with some feature to save it.
+- Time Limit - helpful reminders to take a break every 20 minutes + configurable time limits for websites and browser
+- AI Assistant - since I'm already using the API for translation might as well add GPT to the context menu. Maybe save cconversations in local storage and give options for multiple models?
 
 ## PSA: Dangers of Chrome Web Store Extensions
 One might ask why I'm doing all this when I can easily download these features from the Chrome web store?

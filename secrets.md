@@ -15,7 +15,6 @@ neovim missing features
 - turn off ahk (vscode too)
 - rename symbol (in and across files)
 - wrap in parenthesis / quotes
-- folding
 - debugging
 - parenthesis coloring
     https://github.com/HiPhish/rainbow-delimiters.nvim/tree/master
